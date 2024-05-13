@@ -10,22 +10,15 @@ const producto = {
 
 // const nombre = producto.nombre;
 
-
+const nombre = "David";
 
 
 // Otra forma de hacerlo y que también es nueva, es con algo llamado object destructuring...
 
 // Destructuring significa, sacar de una esctructura, puede ser complejo, no lo es tanto sobretodo cuando lo practicas
 
-const { nombre } = producto;
+const { nombre: nombreProducto, precio, disponible } = producto;
 
 
-// si deseas extraer más variables;
-const { precio } = producto;
-
-console.log(nombre)
+console.log(nombreProducto)
 console.log(precio)
-
-// O puedes hacerlo mejor con 
-
-const {nombre, precio} = producto;

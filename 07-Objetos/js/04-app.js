@@ -5,9 +5,27 @@ const producto = {
     nombre: "Monitor 20 pulgadas",
     precio: 30,
     disponible: true,
-    informacion : {
+    informacion: {
         peso: '1kg',
         medida: '1m'
+    }
+}
+
+const andres = {
+    nombre: "Andres",
+    edad: 30,
+    informacion: {
+        altura: '1.73',
+        peso: '70kg'
+    }
+}
+
+const paula = {
+    nombre: "Paula",
+    edad: 25,
+    informacion: {
+        altura: '1.60',
+        peso: '48kg'
     }
 }
 
@@ -20,3 +38,7 @@ console.log(producto); // Puedes ver que tenemos un objeto dentro de un objeto.
 console.log(producto.informacion);
 console.log(producto.informacion.peso);
 console.log(producto.informacion.medida);
+
+const { peso, medida } = producto.informacion;
+
+// 
